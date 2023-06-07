@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPen } from "@fortawesome/free-solid-svg-icons";
 import { faBomb } from "@fortawesome/free-solid-svg-icons";
 
 function ButtonCard() {
+  const [action, setAction] = useState();
+  
+  
   function handleEdit() {
     alert("you are about to edit this person");
   }
